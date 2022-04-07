@@ -482,7 +482,7 @@ a {
         font-size: 1.3rem;
     }
     .navbar .menu ul li a{
-        letter-spacing: .1rem;
+        letter-spacing: 0rem;
     }
     .navbar .logo{
         display: none;
