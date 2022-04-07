@@ -481,6 +481,9 @@ a {
     p, a{
         font-size: 1.3rem;
     }
+    .navbar{
+        text-align: center;
+    }
     .navbar .menu ul li a{
         letter-spacing: 0rem;
     }
