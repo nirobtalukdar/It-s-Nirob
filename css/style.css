@@ -1,0 +1,575 @@
+/* Common Css */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: #F9F9F9;
+}
+
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: .2rem;
+}
+
+p,
+a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+    font-weight: 400;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.lg_heading {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.md_heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.sm_heading {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.tc2 {
+    color: #EF0454;
+}
+
+.tcw {
+    color: #202124;
+}
+
+.tw {
+    color: #fff;
+}
+
+/* Common Css */
+/* Header Css */
+.header {
+    height: 100vh;
+}
+
+.navbar::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.navbar .logo {
+    float: left;
+    padding: 2rem 0;
+}
+
+.navbar .menu {
+    float: right;
+}
+
+.navbar .menu ul li {
+    display: inline-block;
+    padding: 2rem;
+}
+
+.navbar .menu ul li a {
+    text-transform: uppercase;
+    color: #202124;
+    position: relative;
+    letter-spacing: .2rem;
+}
+.navbar .menu ul li a::after {
+    content: "";
+    width: 0;
+    height: .3rem;
+    background: #EF0454;
+    position: absolute;
+    top: 2.5rem;
+    left: 0;
+    transition: all linear .5s;
+}
+
+.navbar .menu ul li:hover a::after {
+    width: 100%;
+}
+
+/* Header Css */
+/* Hero Css */
+.hero {
+    padding: 15rem 0;
+}
+
+.hero .hero_text {
+    margin: auto;
+    text-align: center;
+}
+
+.hero .hero_text h1 {
+    font-size: 5.5rem;
+    letter-spacing: .5rem;
+    font-weight: 700;
+    margin-bottom: .5rem;
+}
+
+.hero .hero_text p {
+    width: 50%;
+    margin: 2rem auto;
+}
+
+.hero .hero_text a {
+    display: inline-block;
+    color: #FFF;
+    padding: .7em 0;
+    width: 10em;
+    background: #202124;
+    letter-spacing: .2rem;
+    text-align: center;
+    transition: all linear .5s;
+    box-shadow: -4px -1px 28px -2px rgba(181, 172, 172, 0.247);
+}
+
+.hero .hero_text a:last-child {
+    margin-left: 2rem;
+}
+
+.hero .hero_text a:hover {
+    background: #EF0454;
+}
+
+/* Hero Css */
+/* Feature Css */
+.feature {
+    padding-bottom: 10rem;
+}
+
+.feature .container .feature_wrapper::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.feature .container .feature_wrapper .feature_wrapper1 {
+    float: left;
+    width: 50%;
+}
+
+.feature .container .feature_wrapper .feature_wrapper1 .feature_box {
+    width: 45%;
+    background: #fff;
+    box-shadow: -4px -1px 28px -2px rgba(181, 172, 172, 0.247);
+    float: left;
+    text-align: center;
+    margin-right: 1.5rem;
+    padding: 2rem 0;
+    transition: all linear .5s;
+    margin-bottom: 2rem;
+}
+
+.feature .container .feature_wrapper .feature_wrapper1 .feature_box:last-child {
+    margin-right: 0;
+}
+
+.feature .container .feature_wrapper .feature_wrapper1 .feature_box i {
+    font-size: 5rem;
+    transition: all linear .9s;
+}
+
+.feature .container .feature_wrapper .feature_wrapper1 .feature_box h3 {
+    font-size: 2.5rem;
+    margin: 2rem 0;
+    transition: all linear .5s;
+}
+
+.feature .container .feature_wrapper .feature_wrapper1 .feature_box:hover {
+    transform: scale(1.05);
+}
+
+.feature .container .feature_wrapper .feature_wrapper1 .feature_box h2 {
+    font-size: 4.5rem;
+}
+
+.feature .container .feature_wrapper .feature_wrapper2 {
+    float: right;
+    width: 50%;
+    height: 500px;
+}
+
+.feature .container .feature_wrapper .feature_wrapper2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Feature Css */
+/* Service Css */
+.service {
+    padding: 10rem 0;
+}
+
+.service .container .service_header {
+    text-align: center;
+}
+.service .container .service_header h6{
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: -4px -1px 28px -2px rgba(181, 172, 172, 0.247);
+}
+.service .container .service_wrapper{
+    margin-top: 5rem;
+}
+.service .container .service_wrapper::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.service .container .service_wrapper .service_box{
+    text-align: center;
+    padding: 6rem 2rem;
+    float: left;
+    width: 30%;
+    margin-right: 6rem;
+    transition: all linear .5s;
+}
+.service .container .service_wrapper .service_box:hover{
+    background: #fff;
+    transform: scale(1.1);
+    box-shadow: 5px 5px 20px 0px #2021242f;
+    border-radius: 2rem;
+}
+.service .container .service_wrapper .service_box:last-child{
+    margin-right: 0;
+}
+.service .container .service_wrapper .service_box i{
+    font-size: 4.5rem;
+    padding: 3rem;
+    background: #202124;
+    border-radius: 100%;
+    color: #fff;
+}
+.service .container .service_wrapper .service_box h4{
+    color: #202124;
+    margin: 3rem 0;
+}
+
+/* Service Css */
+/* About Css */
+.about{
+    padding: 10rem 0;
+}
+.about .container .about_wrapper::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.about .container .about_wrapper .about_img{
+    float: left;
+    width: 50%;
+}
+.about .container .about_wrapper .about_img img{
+    width: 100%;
+}
+.about .container .about_wrapper .about_text{
+    float: right;
+    width: 50%;
+    padding-left: 3rem;
+}
+.about .container .about_wrapper .about_text h6{
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: -4px -1px 28px -2px rgba(181, 172, 172, 0.247);
+}
+.about .container .about_wrapper .about_text a{
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    background: #202124;
+    color: #fff;
+    margin-top: 3rem;
+    letter-spacing: .2rem;
+    transition: all linear .5s;
+}
+.about .container .about_wrapper .about_text a:hover{
+    background: #EF0454;
+}
+.about .container .about_wrapper .about_text h2{
+    margin: 2rem 0;
+}
+.about .container .about_wrapper .about_text .signature{
+    margin-top: 2.5rem;
+}
+
+/* About Css */
+/* Portfolio Css */
+.portfolio{
+    padding: 10rem 0;
+}
+.portfolio .container .portfolio_header{
+    text-align: center;
+    margin-bottom: 10rem;
+}
+.portfolio .container .portfolio_header h6{
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: -4px -1px 28px -2px rgba(181, 172, 172, 0.247);
+    margin-bottom: 2rem ;
+}
+.portfolio .container .portfolio_wrapper::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.portfolio .container .portfolio_wrapper .portfolio_box{
+    float: left;
+    width: 32%;
+    margin-right: 2.4rem;
+    box-shadow: -4px -1px 28px -2px rgba(181, 172, 172, 0.74);
+    transition: all linear .5s;
+}
+.portfolio .container .portfolio_wrapper .portfolio_box:hover{
+    transform: scale(1.1);
+}
+.portfolio .container .portfolio_wrapper .portfolio_box:last-child{
+    margin-right: 0;
+}
+.portfolio .container .portfolio_wrapper .portfolio_box img{
+    width: 100%;
+}
+/* Portfolio Css */
+/* Contact Css */
+.contact{
+    padding: 10rem 0;
+}
+.contact .container .contact_wrapper::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.contact .container .contact_wrapper .contact_text{
+    float: left;
+    width: 50%;
+    margin-top: 5rem;
+}
+.contact .container .contact_wrapper .contact_header{
+    width: 50%;
+    margin-bottom: 2rem;
+}
+.contact .container .contact_wrapper .contact_header h6{
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: -4px -1px 28px -2px rgba(181, 172, 172, 0.247);
+    margin-bottom: 2rem;
+}
+.contact .container .contact_wrapper .contact_text form::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.contact .container .contact_wrapper .contact_text input{
+    float: left;
+    width: 45%;
+    margin-right: 2rem;
+}
+.contact .container .contact_wrapper .contact_text input, textarea{
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+    font-weight: 400;
+    padding: 1rem 2.5rem;
+    border-radius: 2rem;
+    outline: 0;
+    border: 0;
+    margin-bottom: 2rem;
+    box-shadow: -4px -1px 28px -2px rgb(181, 172, 172);
+    transition: all linear .3s;
+}
+.contact .container .contact_wrapper .contact_text textarea:hover{
+    box-shadow: -4px -1px 28px -2px rgba(181, 172, 172, 0);
+}
+.contact .container .contact_wrapper .contact_text input:hover{
+    box-shadow: -4px -1px 28px -2px rgba(181, 172, 172, 0);
+}
+.contact .container .contact_wrapper .contact_text textarea{
+    width: 93%;
+    margin-bottom: 0;
+}
+.contact .container .contact_wrapper .contact_text a{
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    background: #202124;
+    color: #fff;
+    margin-top: 2rem;
+    letter-spacing: .2rem;
+    transition: all linear .5s;
+    border-radius: 2rem;
+    box-shadow: -4px -1px 28px -2px rgb(181, 172, 172);
+}
+.contact .container .contact_wrapper .contact_text a:hover{
+    background: #EF0454;
+}
+.contact .container .contact_wrapper .contact_img{
+    float: right;
+    width: 50%;
+    height: 100%;
+}
+.contact .container .contact_wrapper .contact_img img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+/* Contact Css */
+/* Footer Css */
+.footer{
+    padding: 5rem 0;
+    text-align: center;
+}
+.footer .container .social_media{
+    margin-bottom: 1rem;
+}
+.footer .container .social_media a i{
+    color: #EF0454;
+    font-size: 3rem;
+    margin-right: 2rem;
+}
+.footer .container .social_media a:last-child i{
+    margin-right: 0;
+}
+/* Footer Css */
+/* Responsive Css */
+@media (max-width: 500px){
+    .header {
+        height: 90vh;
+    }
+
+    p, a{
+        font-size: 1.3rem;
+    }
+    .navbar .logo{
+        display: none;
+    }
+    .navbar .menu ul li{
+        padding:2rem .8rem;
+    }
+    .hero {
+        padding: 10rem 0px;
+    }
+    .hero .hero_text h1{
+        font-size: 3.5rem;
+    }
+    .hero .hero_text p{
+        width: 100%;
+        margin: 3rem 0;
+    }
+    .feature .container .feature_wrapper .feature_wrapper1 .feature_box{
+        float: none;
+        width: 100%;
+    }
+    .feature .container .feature_wrapper .feature_wrapper1{
+        float: none;
+        width: 100%;
+    }
+    .feature .container .feature_wrapper .feature_wrapper2{
+        float: none;
+        width: 100%;
+    }
+    .feature{
+        padding: 5rem 0;
+    }
+    .lg_heading{
+        font-size: 3.5rem;
+    }
+    .service .container .service_wrapper .service_box{
+        float: none;
+        width: 100%;
+    }
+    .service {
+        padding: 5rem 0;
+    }
+    .about{
+        padding: 5rem 0;
+    }
+    .about .container .about_wrapper .about_img {
+        float: none;
+        width: 100%;
+    }
+    .about .container .about_wrapper .about_text {
+        float: none;
+        width: 100%;
+        padding-left: 0rem;
+    }
+    .portfolio {
+        padding: 5rem 0;
+    }
+    .portfolio .container .portfolio_wrapper .portfolio_box {
+        float: none;
+        width: 100%;
+        margin-bottom: 2rem;
+        margin-right: 0rem;
+        box-shadow: -4px -1px 28px -2px rgba(181, 172, 172, 0.74);
+        transition: all linear .5s;
+    }
+    .contact {
+        padding: 5rem 0;
+    }
+    .contact .container .contact_wrapper .contact_header{
+        width: 100%;
+    }
+    .contact .container .contact_wrapper .contact_text {
+        float: none;
+        width: 100%;
+        margin-top: 5rem;
+    }
+    .contact .container .contact_wrapper .contact_text input {
+        float: left;
+        width: 47%;
+        margin-right: .5rem;
+    }
+    .contact .container .contact_wrapper .contact_text textarea {
+        width: 100%;
+        margin-bottom: 0;
+    }
+    .contact .container .contact_wrapper .contact_img {
+        float: none;
+        width: 100%;
+        height: 100%;
+        margin-top: 2rem;
+    }
+}
+/* Responsive Css */
