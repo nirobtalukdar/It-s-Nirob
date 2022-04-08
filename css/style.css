@@ -81,7 +81,12 @@ a {
 .header {
     height: 100vh;
 }
-
+.navbar{
+    position: fixed;
+    background: #F9F9F9;
+    width: 90%;
+    z-index: 999;
+}
 .navbar::after {
     content: "";
     display: block;
