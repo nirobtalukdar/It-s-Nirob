@@ -131,7 +131,7 @@ a {
 /* Header Css */
 /* Hero Css */
 .hero {
-    padding: 15rem 0;
+    padding: 23rem 0;
 }
 
 .hero .hero_text {
@@ -502,7 +502,7 @@ a {
         padding:2rem .8rem;
     }
     .hero {
-        padding: 10rem 0px;
+        padding: 20rem 0px;
     }
     .hero .hero_text h1{
         font-size: 3.5rem;
